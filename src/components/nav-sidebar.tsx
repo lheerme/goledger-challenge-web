@@ -12,7 +12,7 @@ export function NavSidebar() {
       </button>
 
 
-      <div className="flex flex-col gap-1 font-semibold text-sm">
+      <div className="flex flex-col gap-1 font-medium text-sm">
         <h2 className="text-violet-400 text-base mb-2">Dashboards</h2>
         <button 
           className="text-zinc-950 bg-violet-400 w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
@@ -36,7 +36,7 @@ export function NavSidebar() {
           className="w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
         >
           <Disc className="size-4" />
-          <span>Albums</span>
+          <span>Álbuns</span>
         </button>
         <button 
           className="w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
