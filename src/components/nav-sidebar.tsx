@@ -1,4 +1,5 @@
 import { Disc, House, Library, ListMusic, Mic, Music } from "lucide-react";
+import { NavSidebarLink } from "./nav-sidebar-link";
 
 export function NavSidebar() {
   return (
@@ -14,36 +15,26 @@ export function NavSidebar() {
 
       <div className="flex flex-col gap-1 font-medium text-sm">
         <h2 className="text-violet-400 text-base mb-2">Dashboards</h2>
-        <button 
-          className="text-zinc-950 bg-violet-400 w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
-        >
+        <NavSidebarLink to={'/overview'} >
           <House className="size-4" />
           <span>Overview</span>
-        </button>
-        <button 
-          className="w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
-        >
+        </NavSidebarLink>
+        <NavSidebarLink to={'/playlists'} >
           <ListMusic className="size-4" />
           <span>Playlists</span>
-        </button>
-        <button 
-          className="w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
-        >
+        </NavSidebarLink>
+        <NavSidebarLink to={'/songs'} >
           <Music className="size-4" />
           <span>Músicas</span>
-        </button>
-        <button 
-          className="w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
-        >
+        </NavSidebarLink>
+        <NavSidebarLink to={'/albuns'} >
           <Disc className="size-4" />
           <span>Álbuns</span>
-        </button>
-        <button 
-          className="w-full py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-violet-400 hover:text-zinc-950 hover:transition-colors"
-        >
+        </NavSidebarLink>
+        <NavSidebarLink to={'/artists'} >
           <Mic className="size-4" />
           <span>Artistas</span>
-        </button>
+        </NavSidebarLink>
       </div>
     </nav>
   )
