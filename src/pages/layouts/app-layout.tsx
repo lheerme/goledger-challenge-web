@@ -5,7 +5,7 @@ export function AppLayout() {
   return (
     <div className="h-dvh w-full flex">
       <NavSidebar />
-      <main className="flex-1">
+      <main className="flex-1 overflow-auto">
         <Outlet />
       </main>
     </div>
