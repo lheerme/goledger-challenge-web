@@ -10,7 +10,7 @@ export function Button(props: ButtonProps) {
     <button 
       {...rest}
       className={twMerge(
-        'bg-violet-400 text-zinc-950 flex justify-center items-center gap-1 px-3 py-2 rounded-lg hover:opacity-80 hover:transition-opacity',
+        'bg-violet-400 text-zinc-950 flex justify-center items-center gap-1 px-3 py-2 rounded-lg hover:opacity-80 hover:transition-opacity disabled:opacity-40 disabled:cursor-not-allowed',
         className
       )}
     />
